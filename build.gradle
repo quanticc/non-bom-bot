@@ -101,7 +101,13 @@ release {
     preTagCommitMessage = 'Release version'
     tagCommitMessage = 'Release version'
     newVersionCommitMessage = 'Next development version'
+    git {
+        requireBranch = ''
+        pushToRemote = ''
+    }
 }
+
+afterReleaseBuild.dependsOn bintrayUpload
 
 wrapper {
     gradleVersion = "5.1.1"
