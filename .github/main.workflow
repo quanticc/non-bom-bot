@@ -1,6 +1,6 @@
 workflow "Wiki Overseer" {
-  resolves = ["Actions for Discord"]
   on = "gollum"
+  resolves = ["Actions for Discord"]
 }
 
 action "Actions for Discord" {
